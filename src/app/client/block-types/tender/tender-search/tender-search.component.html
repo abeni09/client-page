@@ -1,0 +1,27 @@
+<section class="block" [ngClass]="'block-' + block.type">
+    <div class="container">
+      <div class="flex">
+          <ul>
+              <li>
+                <div class="left">
+                    <input id="search" placeholder="search" type="text" value="search" >
+                    <button>Search</button>
+                </div>          
+              </li>
+              <li>
+                <div class="right">
+                    <select>
+                        <option value="sort by deadline"></option>
+                        <option value="sort by title"></option>
+                    </select>
+                    <select>
+                        <option value="sort by ascending"></option>
+                        <option value="sort by descending"></option>
+                    </select>
+                </div>        
+              </li>
+          </ul>
+        </div>
+    </div>
+  </section>
+  

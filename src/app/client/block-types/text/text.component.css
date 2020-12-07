@@ -1,0 +1,20 @@
+.block {
+    color: #283d50;
+  }
+  .text-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  h2 {
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 40px;
+    color: #056F8F;
+  }
+  p {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  

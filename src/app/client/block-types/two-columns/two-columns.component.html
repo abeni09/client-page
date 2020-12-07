@@ -1,0 +1,19 @@
+<section class="block" [ngClass]="'block-' + block.type">
+  <div class="container">
+    <div class="flex">
+      <div class="left">
+        <h4>{{block?.title}}</h4>
+        <br>
+        <h6>Posted: {{block?.created_at}}</h6>
+        <br>
+        <p>{{block?.data?.body}}</p>
+        <br>
+        <!-- <a [routerLink]="newsDetail.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a> -->
+        <button [routerLink]="newsDetail" onclick="readMore()" class="readMore">Read More</button>
+      </div>
+      <div class="right">
+        <img [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" />
+      </div>
+    </div>
+  </div>
+</section>

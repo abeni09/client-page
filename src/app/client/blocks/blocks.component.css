@@ -1,0 +1,38 @@
+.block-text .container {
+    max-width: none;
+    padding: 0;
+  }
+  .admin-container {
+    background-color: #fff;
+    transition: all 0.1s ease;
+    padding: 0;
+    cursor: pointer;
+  }
+  .admin-container:hover {
+    padding: 2rem;
+    background-color: #a3ff82;
+  }
+  .admin-container:hover .inner {
+    border: 2px dashed #010101;
+    cursor: auto;
+  }
+  .inner {
+    background-color: #fff;
+    transition: all 0.15s ease;
+    border: 0;
+  }
+.archives{
+  margin-left: 9.5%;
+}  
+button{
+  /* text-align: left; */
+  font-size: 14px;
+  width: 100px;
+  height: 32px;
+  font-weight: 300;
+  border: 0.5px solid #EEEEEE;
+  background-color: #fefefe;
+}
+button:hover{
+  cursor: pointer;
+}

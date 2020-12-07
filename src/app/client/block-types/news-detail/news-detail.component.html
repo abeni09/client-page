@@ -1,0 +1,15 @@
+<section class="block" [ngClass]="'block-' + block.type">
+    <div class="container">
+      <div class="flex">
+        <div class="top">
+          <h2>{{block?.title}}</h2>
+          <h6>Posted {{ block?.created_at }}</h6>
+          <img [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" />
+        </div>
+        <div class="bottom">
+          <p>{{block?.data?.body}}</p>          
+        </div>
+      </div>
+    </div>
+  </section>
+  

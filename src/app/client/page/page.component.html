@@ -1,0 +1,29 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <ul>
+        <li>
+          <img src="/assets/logo-ethernet.png" alt="Logo">
+        </li>
+        <li>
+          <h6>Ethiopian Educational Research Network </h6>
+        </li>
+      </ul>
+      
+    </div>
+    <ul>
+      <li *ngFor="let item of headerItems">
+        <a [routerLink]="item.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<br>
+<main>
+  <app-blocks *ngIf="!loading && !notFound && footer"></app-blocks>
+  <!-- <app-loader *ngIf="loading"></app-loader> -->
+  <app-page-not-found *ngIf="notFound"></app-page-not-found>
+</main>
+<footer>
+  <p>{{footer?.text}}</p>
+</footer>
