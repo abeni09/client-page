@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 
 function openNav() {
   document.getElementById("sidenav").style.width = "100%";
-  document.getElementById("sidenav").style.height = "20%";
+  document.getElementById("sidenav").style.height = "30%";
   document.getElementById("main").style.marginTop = "40%";
 }
 
@@ -13,7 +13,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("sidenav").style.width = "0";
   document.getElementById("sidenav").style.height = "0";
-  document.getElementById("sidenav").style.transition = "1s";
+  document.getElementById("sidenav").style.transition = "0.1s";
   document.getElementById("main").style.marginTop = "0";
 }
 
