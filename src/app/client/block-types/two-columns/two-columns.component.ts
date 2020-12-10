@@ -20,9 +20,9 @@ export class TwoColumnsComponent {
       environment.apirUrl + "/uploads/original/" + this.block.data.image.path
     );
   }
-  get detail(){
-    return this.clientService.newsDetail;
-  }
+  // get detail(){
+  //   return this.clientService.newsDetail;
+  // }
   constructor(private clientService: ClientService, private router: Router) {}
   readMore(){
     const newsId=this.block.id;

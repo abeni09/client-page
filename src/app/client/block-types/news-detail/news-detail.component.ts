@@ -20,8 +20,8 @@ export class NewsDetailComponent{
       environment.apirUrl + "/uploads/original/" + this.block.data.image.path
     );
   }
-  get detail(){
-    return this.clientService.newsDetail;
-  }
+  // get detail(){
+  //   return this.clientService.newsDetail;
+  // }
 
 }

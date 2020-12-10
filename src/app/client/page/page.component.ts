@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 
 function openNav() {
   document.getElementById("sidenav").style.width = "100%";
-  document.getElementById("sidenav").style.height = "30%";
+  document.getElementById("sidenav").style.height = "20%";
   document.getElementById("main").style.marginTop = "40%";
 }
 
@@ -41,9 +41,9 @@ export class PageComponent implements OnInit, OnDestroy {
     return this.clientService.footer;
   }
   
-  get detail(){
-    return this.clientService.newsDetail;
-  }
+  // get detail(){
+  //   return this.clientService.newsDetail;
+  // }
 
   constructor(private clientService: ClientService, private router: Router) {}
 
