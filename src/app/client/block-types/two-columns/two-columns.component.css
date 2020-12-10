@@ -53,3 +53,23 @@ button:hover{
   color: #fff;
   cursor: pointer;
 }
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right,.left,h4,img{
+    width:100%;
+    display: block;
+    float: left;
+  }
+  /* .right{
+    float: left;
+  }
+  .left{
+    float: right;
+  } */
+  .flex{
+    flex-direction: column-reverse;
+  }
+  .change{
+    flex-direction: column-reverse;
+  }
+}                                     

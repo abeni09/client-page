@@ -1,25 +1,31 @@
 <header class="header">
   <div class="container">
     <div class="logo">
-      <ul>
-        <li>
+      <ul class="listLogo">
+        <li class="imgLogo">
           <img src="/assets/logo-ethernet.png" alt="Logo">
         </li>
-        <li>
+        <li class="txtLogo">
           <h6>Ethiopian Educational Research Network </h6>
         </li>
       </ul>
       
     </div>
-    <ul>
-      <li *ngFor="let item of headerItems">
-        <a [routerLink]="item.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a>
-      </li>
+    <ul id="nyTopnav" class="headerItems">
+      <img id="navImg" (click)="openMenu()" class="navBar" src="../../../assets/navbar.png" alt="open">
+      <!-- <input type="checkbox"> -->
+      <ul id="sidenav" class="sidenav">
+        <img id="navImg" (click)="closeMenu()" src="../../../assets/closeNavBar.png" alt="Close" class="closeNavBar">
+        <li *ngFor="let item of headerItems">
+          <a class="items" [routerLink]="item.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a>
+        </li>
+      </ul>
+      
     </ul>
   </div>
 </header>
 <br>
-<main>
+<main id="main">
   <app-blocks *ngIf="!loading && !notFound && footer"></app-blocks>
   <!-- <app-loader *ngIf="loading"></app-loader> -->
   <app-page-not-found *ngIf="notFound"></app-page-not-found>
@@ -27,3 +33,4 @@
 <footer>
   <p>{{footer?.text}}</p>
 </footer>
+  

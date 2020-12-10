@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.styl"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/sidenav.js"
+            ]
           },
           "configurations": {
             "production": {

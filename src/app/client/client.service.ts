@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 // import { url } from 'inspector';
 import { RequestService } from "../http/request.service";
-import { Block, HeaderItem, Footer, newsDetail } from "../interfaces";
+import { Block, HeaderItem, Footer} from "../interfaces";
 
 @Injectable({
   providedIn: "root"
@@ -14,7 +14,6 @@ export class ClientService {
   headerItems: HeaderItem[] = [];
   footer: Footer;
   loading: boolean = true;
-  newsDetail:newsDetail;
 
   cache: object = {};
 
@@ -69,7 +68,7 @@ export class ClientService {
         //   description:detail.page.description
 
         // }));
-        this.newsDetail=res.data.detail;
+        // this.newsDetail=res.data.detail;
         this.footer = res.data.footer;
         this.loading = false;
 
