@@ -4,8 +4,8 @@
 <br>
 <br>
 <ng-template ngFor let-block [ngForOf]="blocks">
-  <div [ngClass]="isAuthed ? 'admin-container' : false" (click)="editBlock(block)">
-    <div [ngClass]="isAuthed ? 'inner' : false" (click)="stopPropagation($event)">
+  <div>
+    <div>
       <ng-container [ngSwitch]="block.type">
         <!-- <app-hero *ngSwitchCase="'hero'" [block]="block"></app-hero> -->
         <app-text *ngSwitchCase="'text'" [block]="block"></app-text>
