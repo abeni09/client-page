@@ -1,14 +1,16 @@
 <section class="block" [ngClass]="'block-' + block.type">
   <div class="container">
-    <div class="flex">
-      <div class="left">
-        <h1>{{block?.title}}</h1>
-        <a class="cta" [routerLink]="block?.data?.cta?.url"
-          [target]="block?.data?.cta?.target">{{block?.data?.cta?.title}}</a>
-      </div>
-      <div class="right">
-        <img [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" />
-      </div>
-    </div>
+    <ul class="flex">
+      <li class="top">
+        <!-- <h1>{{block?.title}}</h1> -->
+          <a class="cta" [routerLink]="block?.data?.cta?.url" [target]="block?.data?.cta?.target">{{block?.data?.cta?.title}}</a>
+      </li>
+      <li class="bottom">
+        
+          <p>{{block?.data.body}}</p>
+          <!-- <img [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" /> -->
+        
+      </li>
+    </ul>
   </div>
 </section>

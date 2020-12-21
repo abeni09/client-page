@@ -7,7 +7,7 @@ import { ClientService } from '../../client.service';
 @Component({
   selector: 'app-news-detail',
   templateUrl: './news-detail.component.html',
-  styleUrls: ['./news-detail.component.styl']
+  styleUrls: ['./news-detail.component.css']
 })
 export class NewsDetailComponent{
   @Input() block: Block;

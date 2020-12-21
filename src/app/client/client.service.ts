@@ -39,18 +39,18 @@ export class ClientService {
     // get cached page
     const cachedPage = this.cache[currentSlug];
 
-    // if page is cached, load data from cache and exit
-    // if (cachedPage) {
-    //   this.pageId = cachedPage.page.id;
-    //   this.pageBlocks = cachedPage.page.blocks;
-    //   this.headerItems = cachedPage.header_items.map((item: any) => ({
-    //     title: item.page.title,
-    //     url: item.page.slug
-    //   }));
-    //   this.footer = cachedPage.footer;
-    //   this.loading = false;
-    //   return;
-    // }
+    //if page is cached, load data from cache and exit
+    if (cachedPage) {
+      this.pageId = cachedPage.page.id;
+      this.pageBlocks = cachedPage.page.blocks;
+      this.headerItems = cachedPage.header_items.map((item: any) => ({
+        title: item.page.title,
+        url: item.page.slug
+      }));
+      this.footer = cachedPage.footer;
+      this.loading = false;
+      return;
+    }
 
     this.http
       .get(`api/pages/find`, {

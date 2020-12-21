@@ -4,6 +4,8 @@
       <article *ngFor="let partner of block.data.partners;" class="partner">
         <figure>
           <img [src]="imagePath(partner.image)" [alt]="partner.image.alt" [title]="partner.image.title">
+          <br>
+          <button class="button">Visit Site</button>
         </figure>
       </article>
     </div>

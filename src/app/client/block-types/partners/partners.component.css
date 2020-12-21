@@ -12,6 +12,13 @@
   img:hover {
     transform: scale(1.15);
   }
+  .button{
+    opacity: 0;
+  }
+  img:hover .button{
+    opacity: 1;
+    margin-left: 20%;
+  }
   .partners {
     display: flex;
     align-items: center;

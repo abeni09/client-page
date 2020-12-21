@@ -14,6 +14,7 @@ import { TenderSearchComponent } from './block-types/tender/tender-search/tender
 import { TenderListComponent } from './block-types/tender/tender-list/tender-list.component';
 import { VacancyListComponent } from './block-types/vacancy/vacancy-list/vacancy-list.component';
 import { VacancySearchComponent } from './block-types/vacancy/vacancy-search/vacancy-search.component';
+import { SearchComponent } from './block-types/search/search.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { VacancySearchComponent } from './block-types/vacancy/vacancy-search/vac
     TenderSearchComponent,
     TenderListComponent,
     VacancyListComponent,
-    VacancySearchComponent
+    VacancySearchComponent,
+    SearchComponent
   ],
   imports: [CommonModule, ClientRoutingModule]
 })

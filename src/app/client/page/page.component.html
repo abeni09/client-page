@@ -27,7 +27,7 @@
 <br>
 <main id="main">
   <app-blocks *ngIf="!loading && !notFound && footer"></app-blocks>
-  <!-- <app-loader *ngIf="loading"></app-loader> -->
+  <app-loader *ngIf="loading"></app-loader>
   <app-page-not-found *ngIf="notFound"></app-page-not-found>
 </main>
 <footer>
