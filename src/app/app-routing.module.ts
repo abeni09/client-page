@@ -19,10 +19,6 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./client/client.module').then(m => m.ClientModule)
-  },
-  {
-    path:'newsDetail',
-    component:NewsDetailComponent
   }
 ];
 
