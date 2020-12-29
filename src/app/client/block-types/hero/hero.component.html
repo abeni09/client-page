@@ -1,17 +1,23 @@
-<section class="block" [ngClass]="'block-' + block.type">
-  <div class="container">
-    <ul class="flex">
-      <li (click)="redirect()" class="top">
-        <!-- <h1>{{block?.title}}</h1> -->
-        <!-- <a class="cta" href=""></a> -->
-          <a class="cta" [target]="block?.data?.cta?.target">{{block?.data?.cta?.title}}</a>
-      </li>
-      <li class="bottom">
-        
-          <p>{{block?.data.body}}</p>
-          <!-- <img [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" /> -->
-        
-      </li>
-    </ul>
+<div class="container py-5 my-5 d-flex justify-content-center">
+  <!-- services -->
+  <div class="col-md-12" id="services">
+      <h1 class="text-center custom-text-primary mt-3"><i class="fa fa-cogs"></i></h1>
+      <h2 class="mb-3 custom-text-primary text-center"> <span>{{block?.title}}</span></h2>
+      <div class="row" [ngClass]="'block-' + block.type">
+          <!-- service 1 -->
+          <div class="col-lg-6 my-2">
+
+                  <a class="custom-card" style="width: 500px;" (click)="redirect()">
+                      <div class="card text-white border-0 custom-bg-primary my-3 h-100">
+                          <div class="card-header text-white top">{{block?.data?.cta?.title}}</div>
+                          <div class="card-body shadow-sm text-dark bg-white text-justify bottom">
+                              <p class="card-text">{{block?.data.body}}</p>
+                          </div>
+                      </div>
+                  </a>
+
+
+          </div>
+      </div>
   </div>
-</section>
+</div>

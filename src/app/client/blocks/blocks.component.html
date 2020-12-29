@@ -1,13 +1,11 @@
-<div class="archives">
-  <button>Archives</button>
-</div>
-<br>
-<br>
 <ng-template ngFor let-block [ngForOf]="blocks">
   <div>
     <div>
       <ng-container [ngSwitch]="block.type">
-        <app-hero *ngSwitchCase="'hero'" [block]="block"></app-hero>
+        <app-hero *ngSwitchCase="'hero'" [block]="block">
+          <!-- <h1 class="text-center custom-text-primary mt-3"><i class="fa fa-cogs"></i></h1>
+          <h2 class="mb-3 custom-text-primary text-center"> <span>{{block?.title}}</span></h2> -->
+        </app-hero>
         <app-search *ngSwitchCase="'search'" [block]="block"></app-search>
         <app-text *ngSwitchCase="'text'" [block]="block"></app-text>
         <app-partners *ngSwitchCase="'partners'" [block]="block"></app-partners>

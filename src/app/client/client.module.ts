@@ -15,6 +15,10 @@ import { TenderListComponent } from './block-types/tender/tender-list/tender-lis
 import { VacancyListComponent } from './block-types/vacancy/vacancy-list/vacancy-list.component';
 import { VacancySearchComponent } from './block-types/vacancy/vacancy-search/vacancy-search.component';
 import { SearchComponent } from './block-types/search/search.component';
+import { HeaderComponent } from './block-types/header/header.component';
+import { FooterComponent } from './block-types/footer/footer.component';
+import { SlideShowComponent } from './block-types/slide-show/slide-show.component';
+import { ArchiveComponent } from './block-types/archive/archive.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,11 @@ import { SearchComponent } from './block-types/search/search.component';
     TenderListComponent,
     VacancyListComponent,
     VacancySearchComponent,
-    SearchComponent
+    SearchComponent,
+    HeaderComponent,
+    FooterComponent,
+    SlideShowComponent,
+    ArchiveComponent
   ],
   imports: [CommonModule, ClientRoutingModule]
 })

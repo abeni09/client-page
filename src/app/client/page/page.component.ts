@@ -37,9 +37,7 @@ export class PageComponent implements OnInit, OnDestroy {
     return this.clientService.pageNotFound;
   }
 
-  get footer() {
-    return this.clientService.footer;
-  }
+
   
   // get detail(){
   //   return this.clientService.newsDetail;

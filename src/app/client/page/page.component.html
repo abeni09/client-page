@@ -1,36 +1,15 @@
-<header class="header">
-  <div class="container">
-    <div class="logo">
-      <ul class="listLogo">
-        <li class="imgLogo">
-          <img src="/assets/logo-ethernet.png" alt="Logo">
-        </li>
-        <li class="txtLogo">
-          <h6>Ethiopian Educational Research Network </h6>
-        </li>
-      </ul>
-      
-    </div>
-    <ul id="nyTopnav" class="headerItems">
-      <img id="navImg" (click)="openMenu()" class="navBar" src="../../../assets/navbar.png" alt="open">
-      <!-- <input type="checkbox"> -->
-      <ul id="sidenav" class="sidenav">
-        <img id="navImg" (click)="closeMenu()" src="../../../assets/closeNavBar.png" alt="Close" class="closeNavBar">
-        <li *ngFor="let item of headerItems">
-          <a class="items" [routerLink]="item.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a>
-        </li>
-      </ul>
-      
-    </ul>
-  </div>
-</header>
-<br>
-<main id="main">
-  <app-blocks *ngIf="!loading && !notFound && footer"></app-blocks>
-  <app-loader *ngIf="loading"></app-loader>
-  <app-page-not-found *ngIf="notFound"></app-page-not-found>
-</main>
-<footer>
-  <p>{{footer?.text}}</p>
-</footer>
-  
+<body data-aos-easing="ease-in-out-sine" data-aos-duration="400" data-aos-delay="0">
+  <main id="main">
+    <block-header *ngIf="!loading"></block-header>
+    <app-blocks *ngIf="!loading && !notFound"></app-blocks>
+    <app-loader *ngIf="loading"></app-loader>
+    <app-page-not-found *ngIf="notFound"></app-page-not-found>
+    <block-footer *ngIf="!loading"></block-footer>
+  </main>
+  <script data-savepage-src="/vendor/jquery/jquery.min.js" src=""></script>
+  <script data-savepage-src="/vendor/bootstrap/js/bootstrap.bundle.min.js" src=""></script>
+  <script data-savepage-src="/vendor/bootstrap/js/slick.js" src=""></script>
+  <script data-savepage-src="/vendor/bootstrap/js/aos.js" src=""></script>
+  <script data-savepage-src="/vendor/bootstrap/js/zoom.js" src=""></script>
+  <script data-savepage-src="/vendor/bootstrap/js/transition.js" src=""></script>
+</body>

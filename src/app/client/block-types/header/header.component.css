@@ -1,0 +1,16 @@
+/* .nav-item{
+    padding:2px;
+    margin-left: 7px;
+} */
+.mainTitle{
+    color: #056f8f;
+    letter-spacing:0.04rem;
+    /* font-weight: 300; */
+    /* font-size: 1.015625rem; */
+}
+.navList{
+    font-size: 1rem;
+}
+/* .container-fluid{
+    padding-right: 1px;
+} */

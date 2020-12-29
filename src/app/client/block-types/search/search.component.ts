@@ -4,7 +4,7 @@ import { Block } from 'src/app/interfaces';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.styl']
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent{
   @Input() block: Block;

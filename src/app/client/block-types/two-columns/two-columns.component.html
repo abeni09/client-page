@@ -1,19 +1,58 @@
-<section class="block" [ngClass]="'block-' + block.type">
-  <div class="container">
-    <div class="flex">
-      <div class="left">
-        <h4 class="change">{{block?.title}}</h4>
-        <br>
-        <h6>Posted: {{block?.created_at}}</h6>
-        <br>
-        <p>{{block?.data?.body}}</p>
-        <br>
-        <!-- <a [routerLink]="newsDetail.url" [ngClass]="isLinkActive(item.url)" [title]="item.title">{{item.title}}</a> -->
-        <button [routerLink]="newsDetail" onclick="readMore()" class="readMore">Read More</button>
-      </div>
-      <div class="right"> 
-        <img class="change" [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt" />
-      </div>
+<div class="container custom-text-primary my-5 min-vh-100 py-5">
+  <!-- <div class="row">
+    <div class="col-lg-6">
+        <a data-savepage-href="/visitor/news/archives" href="http://moshe.gov.et/visitor/news/archives" class="btn btn-secondary"><i class="fa fa-archive"></i> <span>Archives</span> </a>
+       </div>
+
+  </div> -->
+  <div class="row my-5" [ngClass]="'block-' + block.type">
+
+    <div class="col-md-6 ">
+        <h5 class="custom-text-primary">{{block?.title}}</h5>
+        <p class="card-subtitle text-muted my-3"><i class="far fa-calendar-alt"> Posted </i> <span>{{block?.created_at}}</span></p>
+        <p class="text-dark my-2">{{block?.data?.body}}</p>
+        <a class="btn btn-outline-primary" href="">Read More</a>
+    </div>
+
+    <div class="col-md-5">
+        <a href="">
+
+            
+
+            <span>
+                <img style="height: 250px; width: 100%; display: block;" [src]="imagePath" [title]="block?.data?.image?.title" [alt]="block?.data?.image?.alt">
+            </span>
+
+
+
+
+        </a>
+        <a href=""> </a>
+
     </div>
   </div>
-</section>
+  <!-- <div class="row">
+    <div class="col-lg-12">
+        <ul class="pagination justify-content-center ">
+            <li class="page-item">
+                
+            </li>
+            <li class="page-item">
+                <a class="page-link" data-savepage-href="/visitor/newsList?sort=dateTime&page=0&ascending=0" href="http://moshe.gov.et/visitor/newsList?sort=dateTime&page=0&ascending=0">First</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link bg-primary text-white" data-savepage-href="/visitor/newsList?sort=dateTime&page=0&ascending=0" href="http://moshe.gov.et/visitor/newsList?sort=dateTime&page=0&ascending=0">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" data-savepage-href="/visitor/newsList?sort=dateTime&page=4&ascending=0" href="http://moshe.gov.et/visitor/newsList?sort=dateTime&page=4&ascending=0">Last</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" data-savepage-href="/visitor/newsList?sort=dateTime&page=1&ascending=0" href="http://moshe.gov.et/visitor/newsList?sort=dateTime&page=1&ascending=0" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </div> -->
+</div>

@@ -1,0 +1,11 @@
+.btn{
+    color:#5a6268;
+    background-color: #fff;
+    font-weight: 540;
+    height: 30px;
+    border:1px solid #eeeeee;
+    /* display: inline-block; */
+    margin-bottom: -5%;
+    margin-top: -5%;
+    width: 20%;
+}
